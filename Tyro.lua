@@ -1421,7 +1421,6 @@ function TyroLibrary:CreateWindow(Settings)
 	if not correctBuild and not Settings.DisableBuildWarnings then
 		task.delay(3, 
 			function() 
-				TyroLibrary:Notify({Title = 'Build Mismatch', Content = 'Tyro may encounter issues as you are running an incompatible interface version ('.. ((Tyro:FindFirstChild('Build') and Tyro.Build.Value) or 'No Build') ..').\n\nThis version of Tyro is intended for interface build '..InterfaceBuild..'.\n\nTry rejoining and then run the script twice.', Image = 4335487866, Duration = 15})		
 			end)
 	end
 
